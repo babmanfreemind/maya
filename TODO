@@ -1,0 +1,3 @@
+TODO : 
+
+- add devise with modules : Database Authenticatable, Confirmable, Recoverable, Registerable, Rememberable, Trackable, Timeout	able, Lockable
