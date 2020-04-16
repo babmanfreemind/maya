@@ -7,5 +7,8 @@ dry_run:
 run_debug:
 	docker run -v $(shell pwd):/maya -p 3000:3000 maya
 
+install_gems:
+	docker run -v $(shell pwd):/maya maya bundle install
+
 rspec:
-	docker run -it -v $(shell pwd):/maya --entrypoint=rspec maya
+	docker run -it -v $(shell pwd):/maya -e RAILS_ENV=test --entrypoint=rspec maya
