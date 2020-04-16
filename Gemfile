@@ -49,8 +49,12 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner-active_record'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  # Needed for 'assigns' method
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
